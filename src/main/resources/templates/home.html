@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
     <head>
-        <title>Blue's Web Page</title>
+        <title>Jason's Web Page</title>
+        
+       <style type="text/css">
+        h1 {font-family: arial; font: 24px; color: darkgreen; border: 2px ridge #ff8000;}
+        body{width: 350px; height: 200px; margin: auto; padding : 200px; font: 16px;}
+        div{align: center;}
+        a{align: center; color: #ff8080;}
+        </style>
     </head>
-    <body>
+    
+     <body bgcolor="#0080ff" text="#400000">
+     
         <h1>Your almost there, just a few more clicks...</h1>
-        <p><a th:href="@{/hello}">Login</a> 
-        </p>
+        
+        <div>
+        
+        <a th:href="@{/hello}">Login</a> 
+        
         <p> 
         Please login with the default username/password and then preceed to creating your 
         own new username and password.   
 		</p>
+		
+		</div>
+
     </body>
 </html>

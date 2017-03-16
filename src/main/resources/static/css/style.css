@@ -10,23 +10,23 @@ label {
 }
 
 h1 {
-	color : #400000;
-	text-align: center;
-	border : 2px dashed #808000;
-	padding : 2px;
+	font-family: arial;
+	font: 24px;
+	color: darkgreen; 
+	border: 2px ridge #ff8000;
 }
 
 h2 {
 	color : #400000;
 	text-align: center;
-	border : 2px dashed #ff0000;
+	border : 2px ridge #808000;
 	padding : 2px;
 }
 
 h3 {
 	color : #400000;
 	text-align: center;
-	border : 2px dashed #ff0080;
+	border : 2px ridge #808000;
 	padding : 2px;
 }
 
@@ -34,39 +34,6 @@ a {
 	align: center;
 	color: #ff8080;
 }
-
-div.entryForm {
-	width: 400px;
-	margin: auto;
-}
-
-div.body {
-	width: 400px;
-	margin: auto;
-}
-
-div.greetings {
-	width: 300px;
-	margin: auto;
-}
-
-div.funPages {
-	width: 350px;
-	margin: auto;
-}
-
-.errorHead {
-	background-color: #0080ff;
-	text-align: center;
-	font-family: arial,helvetica,sans-serif;
-}
-
-.errorBody {
-	background-color: #00ff40;
-	text-align: center;
-	font-family: arial,helvetica,sans-serif;
-}
-
 
 div {
     width: 900px;
