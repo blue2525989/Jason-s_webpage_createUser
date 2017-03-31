@@ -20,7 +20,7 @@ public class UserController {
 	 */
 	
 	@GetMapping(path="/add") // Map ONLY GET Requests
-	public @ResponseBody String addNewUser (@RequestParam String username
+	public String addNewUser (@RequestParam String username
 			, @RequestParam String password) {
 
         //Get connection
@@ -45,7 +45,7 @@ public class UserController {
                 } catch (ClassNotFoundException ex) {
                     System.out.println(ex.getMessage());
                 }
-                return "Saved, please use your browser's back button to return.";
+                return "redirect:/saved";
 	}
 	
 }

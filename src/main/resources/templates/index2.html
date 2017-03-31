@@ -5,7 +5,7 @@
 	<title>Jason's Web Page</title>
 	<meta http-equiv="Content-Type" context="text/html; charset=UTF-8"/>
 	<link href="../static/css/style.css" th:href="@{css/style.css}" rel="stylesheet"/>
-	<link href="../static/css/normalize.css" th:href="@{cdd/normalize.css}" rel="stylesheet"/>
+	<link href="../static/css/normalize.css" th:href="@{css/normalize.css}" rel="stylesheet"/>
 	
 </head>
     <body>
@@ -20,16 +20,18 @@
 		
         <form action="/createLogin/add" method="get">        
        		
-            <div><label> User Name : <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>  
-            
-            <div><input type="submit" value="Create user"/></div>
+            <label> User Name : <input type="text" name="username"/> </label><br/>
+            <label> Password: <input type="password" name="password"/> </label><br/>  
+            <label> Only click once, then click below to login.</label><br/>
+            <input type="submit" value="Create user"/>
         </form>
+        
         </div>
         
         <div align="center">
-        <p>Once you have  new username and password, go ahead and sign out of the default account 
-        <a href="http://sample-env-3.i3ywvhk4um.us-west-2.elasticbeanstalk.com/login">here</a> and sign in with yours.
+        <p>Once you have new username and password go ahead and sign in <br/>
+        <a href="http://sample-env-3.i3ywvhk4um.us-west-2.elasticbeanstalk.com/login">
+        <button type="button">SIGN IN HERE</button></a> 
         </p>
         </div>
     </body>
